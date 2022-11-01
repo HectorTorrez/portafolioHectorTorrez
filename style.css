@@ -1,0 +1,141 @@
+:root {
+    --grey: #8A8B8E;
+    --pink: #FFC0CB;
+    --purple: #191724;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('./assets/img/5927911\ \(1\).gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: var(--purple);
+}
+
+.nav--content {
+    width: 95%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-content--links {
+    width: 65%;
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.nav-content--links a {
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.6rem;
+    color: var(--grey);
+}
+
+.nav-content--links a span {
+    display: inline-block;
+    text-align: center;
+    height: 16px;
+}
+
+.nav-content--links a:hover {
+    color: #fff;
+}
+
+.nav-content--links a svg {
+    width: 16px;
+    height: 16px;
+}
+
+.nav-content--social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-content-social--github a svg,
+.nav-content-social--linkedin a svg {
+    width: 17px;
+    height: 17px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.main-container {
+    width: 98%;
+}
+
+.main--projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    width: 95%;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: var(--purple);
+}
+
+.main-project--card {
+    display: inline-block;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #080613;
+    border-radius: 10px;
+}
+
+.main-project--card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.main-project-card--body {
+    color: #fff;
+    padding: 15px 14px;
+}
+
+.main-project-card--body h2 {
+    font-size: 1.8rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.main-container--sidebar {
+    display: none;
+}
