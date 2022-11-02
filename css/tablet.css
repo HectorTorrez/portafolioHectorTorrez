@@ -17,7 +17,7 @@ nav {
 
 .main-container--sidebar {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     width: 30%;
     border-radius: 15px;
 }
@@ -40,6 +40,17 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.main-sidebar--text-icon {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.main-sidebar--text-icon svg {
+    width: 20px;
+    height: 20px;
 }
 
 .main-container-sidebar--body h2 {
