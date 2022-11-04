@@ -39,6 +39,7 @@
 
 .main-projects--text p:nth-child(5),
 .main-projects--text p:nth-child(6) {
+    margin-bottom: 10px;
     font-size: 1.6rem;
     color: var(--grey);
     font-weight: 400;
