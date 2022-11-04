@@ -118,7 +118,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     width: 95%;
-    max-height: calc(100vh - 100px);
+    max-height: calc(100vh - 120px);
     overflow-y: auto;
     margin: 0 auto;
 }
